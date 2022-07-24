@@ -1,0 +1,184 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+img{
+    box-sizing: border-box;
+}
+.new{
+    background-color: #03780d;
+}
+
+but{
+    position:fixed;
+    background-color:#03780d;
+    width: 110px;
+    border-radius: 20px;
+    margin:20px;
+    padding:5px 0;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+text{
+    position:unset;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    border-radius: 10px;
+    font-weight:lighter;
+    color: #80ab0a;
+    
+}
+foto{
+    text-align: center;
+    position:relative;
+    box-sizing: border-box;
+    display: block;
+    user-select: none;
+    cursor: zoom-in;
+    
+}
+
+body{
+    background-image:url("https://media.istockphoto.com/photos/horizontal-banner-with-succulents-in-a-concrete-pot-home-plants-on-a-picture-id1176554879?k=20&m=1176554879&s=612x612&w=0&h=bMHNiiyr7HIrM9aZGbZ3ntwGf-nQWYB0j2K-pPzwnys=");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:left top;   
+}
+
+ul, menu{
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menu-item{
+    position: relative;
+}
+.menu-link{
+    padding: 1rem;
+    transition: 0.5;
+    display: block;
+}
+.menu-item:hover > .menu-link{
+    color:white
+}
+.sub-menu{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background: #044129;
+    z-index: 1;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.sub-menu > .menu-item{
+    position: absolute;
+    
+}
+.menu-item:hover > .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.sub-menu .menu-item:hover .menu-link{
+    background: green;
+    color: white;
+}
+
+
+
+.navbar{
+    background-color: yellowgreen;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    box-shadow: 0 4px red;
+    flex-wrap:wrap;
+}
+a:hover{
+    background-color:rgb(2, 117, 2);
+    transition:all .3s ease-in;
+    }   
+
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition:0.8s
+}
+
+h1{
+    cursor: pointer;
+    transition:0.8s;
+}
+a:hover{
+    color:seagreen;
+}
+
+h1:hover{
+    color:rgb(17, 138, 63);
+}
+
+body{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    color:rgb(3, 135, 47);
+}
+.content p{
+    font-size: 20px;
+}
+.content h1{
+    font-size: 50px;
+}
+button{
+    width: 150px;
+    border-radius: 20px;
+    margin:20px;
+    padding:5px 0;
+    background-color:#044129;
+    font-weight: 600;
+    color: white;
+}
+button:hover{
+    color: yellowgreen;
+    transition: 1s;
+}
+h2{
+    width: 1250px;
+    border-radius: 20px;
+    margin:60px;
+    padding:5px 0;
+    background-color:#80ab0a;
+    font-weight: 600;
+    color: white;
+}
+h3{
+    width: 150px;
+    border-radius: 20px;
+    margin:20px;
+    padding:5px 0;
+    background-color:#044129;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
